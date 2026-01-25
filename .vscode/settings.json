@@ -1,0 +1,21 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "eslint.validate": ["javascript", "typescript", "vue"],
+
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  "eslint.useFlatConfig": true,
+  "cSpell.words": ["Nuxt"]
+}

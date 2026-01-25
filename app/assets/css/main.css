@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --ui-primary: #ff5c2f;
+  --ui-text: #191919;
+  --ui-border: #eeeeee;
+  --ui-bg: #ffffff;
+  --ui-secondary: #7c7c7c;
+  --white: #fff;
+  --ContentNeutralLevel4: #7c7c7c;
+  --ContentNeutralLevel6: #4d4d4d;
+
+  --SurfaceNeutralLevel18: #fafafa;
+  --SurfaceNeutralLevel2: #ffffff;
+
+  --BorderNeutralLevel1: #eeeeee;
+}
+
+.dark {
+  --ui-text: #fff;
+
+  --ui-border: #3a3a3a;
+  --ui-bg: #202020;
+  --ui-bg-elevated: #1a191965;
+  --ui-border-accented: #3a3a3a;
+
+  --white: #fff;
+
+  --ContentNeutralLevel4: #7c7c7c;
+  --ContentNeutralLevel6: #eeeeee;
+
+  --SurfaceNeutralLevel18: #191919;
+  --SurfaceNeutralLevel2: #202020;
+
+  --BorderNeutralLevel1: #3a3a3a;
+}
+
+@font-face {
+  font-family: "iranSans";
+  src: url("../fonts/IRANSansXV.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --text-2xl-custom: 1.625rem;
+}
+
+@layer utilities {
+  .disabled\:bg-primary {
+    &:disabled {
+      background-color: var(--ContentNeutralLevel4);
+    }
+  }
+}
