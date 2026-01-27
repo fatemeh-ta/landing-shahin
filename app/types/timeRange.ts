@@ -18,6 +18,6 @@ export type TimeRangeId = (typeof timeRangeIds)[number];
 export const defaultTimeRange: TimeRangeId = "yesterday";
 
 export type TimeRangeResult = {
-  fromDateTime: string;
-  endDateTime: string;
+  fromDateTime: string | null;
+  endDateTime: string | null;
 };

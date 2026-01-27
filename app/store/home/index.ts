@@ -5,7 +5,7 @@ export const useHomePage = defineStore("home", () => {
   const { locale } = useI18n();
   const range = computed(() => calcTimeRange(selectedTime.value, locale.value));
 
-  console.log(range.value, "-----------------------------");
+  // console.log(range.value, "-----------------------------");
 
   return {
     selectedTime,

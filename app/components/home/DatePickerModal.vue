@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { TimeRangeResult } from "@/types/timeRange";
+
 defineProps<{
   title: string;
   description?: string;
@@ -7,7 +9,7 @@ defineProps<{
 const showModal = defineModel<boolean>("showModal");
 const { t } = useI18n();
 const open = ref(false);
-
+const customDate = ref<TimeRangeResult>({ fromDateTime: "", endDateTime: "" });
 watch(
   () => showModal.value,
   (newVal) => {
@@ -21,6 +23,7 @@ watch(open, (newVal) => {
 </script>
 
 <template>
+  {{ customDate }}
   <UModal
     v-model:open="open"
     :title="t(title)"
@@ -29,9 +32,14 @@ watch(open, (newVal) => {
       header: 'justify-between items-start border-none',
       body: 'border-none',
       description: 'text-[var(-ContentNeutralLevel6)] pt-1',
+      content: 'overflow-visible',
     }"
   >
-    <template #body> ;;;;;;;;;;;;;;;;;; </template>
+    <template #body>
+      <div class="flex gap-3">
+        <BaseDatePickerRange v-model:customDate="customDate" />
+      </div>
+    </template>
     <template #close>
       <UButton color="neutral" variant="ghost" icon="i-ph-x" size="md" />
     </template>

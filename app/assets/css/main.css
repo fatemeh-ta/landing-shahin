@@ -8,6 +8,7 @@
   --ui-bg: #ffffff;
   --ui-secondary: #7c7c7c;
   --white: #fff;
+  --black: #202020;
   --ContentNeutralLevel4: #7c7c7c;
   --ContentNeutralLevel6: #4d4d4d;
 
@@ -19,7 +20,7 @@
 
 .dark {
   --ui-text: #fff;
-
+  --black: #202020;
   --ui-border: #3a3a3a;
   --ui-bg: #202020;
   --ui-bg-elevated: #1a191965;
@@ -54,4 +55,49 @@
       background-color: var(--ContentNeutralLevel4);
     }
   }
+}
+
+/* .vpd-time .vpd-up-arrow-btn,
+.vpd-time .vpd-down-arrow-btn {
+  justify-content: center !important;
+  display: flex !important;
+} */
+
+.vpd-content {
+  border-radius: 8px !important;
+}
+
+.vpd-controls {
+  padding: 16px;
+}
+
+.vpd-controls .vpd-next {
+  order: 2 !important;
+}
+
+.vpd-controls button {
+  width: 12px !important;
+  height: 12px !important;
+}
+.vpd-controls button > svg {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.vpd-controls.direction-prev {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vpd-controls .vpd-month-label {
+  width: unset !important;
+}
+
+.vpd-container .vpd-header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.vpd-time .vpd-up-arrow-btn {
+  top: 12px !important;
 }
