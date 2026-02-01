@@ -23,7 +23,6 @@ watch(open, (newVal) => {
 </script>
 
 <template>
-  {{ customDate }}
   <UModal
     v-model:open="open"
     :title="t(title)"

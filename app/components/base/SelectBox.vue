@@ -22,11 +22,11 @@ const isRtl = computed(() => ["fa", "ar", "ur"].includes(locale.value));
     :items="items"
     :icon="icon"
     variant="none"
-    class="w-48 border-1 border-[var(--BorderNeutralLevel1)] rounded-lg bg-[var(--SurfaceNeutralLevel2)]"
+    class="cursor-pointer w-48 border-1 border-[var(--BorderNeutralLevel1)] rounded-lg bg-[var(--SurfaceNeutralLevel2)]"
     :ui="{
       leadingIcon: 'text-[var(--ContentNeutralLevel4)] ',
       content: `max-h-[400px] bg-[var(--SurfaceNeutralLevel2)] ring-[var(--BorderNeutralLevel1)] ${isRtl ? '[direction:rtl]' : '[direction:ltr]'} `,
-      item: 'text-sm p-3',
+      item: 'text-sm p-3 cursor-pointer',
       base: `text-sm h-10 ${isRtl ? '[direction:rtl]' : '[direction:ltr]'}`,
       leading: `${!icon && 'hidden'}`,
     }"

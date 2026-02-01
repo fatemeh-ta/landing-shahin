@@ -10,7 +10,7 @@ export function timesList() {
     { title: t("timeRange.last30Day"), id: "30days" },
     { title: t("timeRange.lastMont"), id: "month" },
     { title: t("timeRange.thisMonth"), id: "thisMonth" },
-    { title: t("timeRange.selectDate"), id: "custom" },
+    // { title: t("timeRange.selectDate"), id: "custom" },
   ]);
 
   return { list };
