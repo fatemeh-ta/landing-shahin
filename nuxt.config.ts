@@ -1,12 +1,26 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: ["@nuxt/ui", "@nuxt/eslint", "@nuxtjs/i18n", "@pinia/nuxt"],
   css: ["~/assets/css/main.css"],
+  app: {
+    head: {
+      link: [
+        {
+          rel: "preload",
+          as: "font",
+          href: "/fonts/IRANSansXV.woff",
+          type: "font/woff",
+          crossorigin: "anonymous",
+        },
+      ],
+    },
+  },
 
   ui: {
-    fonts: false, // stops unifont/fontshare/fontsource network calls
+    fonts: false,
   },
+
   eslint: {
     checker: true,
   },
@@ -20,12 +34,22 @@ export default defineNuxtConfig({
     ],
     defaultLocale: "fa",
     detectBrowserLanguage: false,
-    // detectBrowserLanguage: {
-    //   useCookie: false,
-    //   cookieKey: "i18n_redirected",
-    //   fallbackLocale: "en",
-    // },
 
     vueI18n: "../app/i18n/config.ts",
+  },
+
+  // nitro: {
+  //   routeRules: {
+  //     "/_nuxt/**": {
+  //       headers: { "cache-control": "public, max-age=31536000, immutable" },
+  //     },
+  //     "/fonts/**": {
+  //       headers: { "cache-control": "public, max-age=31536000, immutable" },
+  //     },
+  //   },
+  // },
+
+  nitro: {
+    preset: "node-server",
   },
 });

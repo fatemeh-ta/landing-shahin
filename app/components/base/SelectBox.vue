@@ -1,19 +1,25 @@
 <script setup lang="ts">
-import type { DropDownMenu } from "@/types/global";
+import type { DropDownMenu, VariantSelected } from "@/types/global";
 
-const value = defineModel<string>("selectedTime");
+const value = defineModel<string>("innerValue");
 withDefaults(
   defineProps<{
     items: DropDownMenu[];
     icon?: string;
+    variant?: VariantSelected;
+    width?: string;
+    iconColor?: string;
   }>(),
   {
     icon: "i-ph-calendar-dots",
+    variant: "subtle",
+    width: "w-48",
+    iconColor: "text-[var(--ContentNeutralLevel4)]",
   },
 );
 
 const { locale } = useI18n();
-const isRtl = computed(() => ["fa", "ar", "ur"].includes(locale.value));
+const isRtl = computed(() => ["fa"].includes(locale.value));
 </script>
 
 <template>
@@ -21,11 +27,11 @@ const isRtl = computed(() => ["fa", "ar", "ur"].includes(locale.value));
     v-model="value"
     :items="items"
     :icon="icon"
-    variant="none"
-    class="cursor-pointer w-48 border-1 border-[var(--BorderNeutralLevel1)] rounded-lg bg-[var(--SurfaceNeutralLevel2)]"
+    :variant="variant"
+    :class="['cursor-pointer rounded-lg', width]"
     :ui="{
-      leadingIcon: 'text-[var(--ContentNeutralLevel4)] ',
-      content: `max-h-[400px] bg-[var(--SurfaceNeutralLevel2)] ring-[var(--BorderNeutralLevel1)] ${isRtl ? '[direction:rtl]' : '[direction:ltr]'} `,
+      leadingIcon: iconColor,
+      content: `max-h-[400px]  ${isRtl ? '[direction:rtl]' : '[direction:ltr]'} `,
       item: 'text-sm p-3 cursor-pointer',
       base: `text-sm h-10 ${isRtl ? '[direction:rtl]' : '[direction:ltr]'}`,
       leading: `${!icon && 'hidden'}`,

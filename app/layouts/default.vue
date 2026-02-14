@@ -1,14 +1,15 @@
 <script lang="ts" setup>
-useHead({
-  bodyAttrs: {
-    class: "bg-[var(--SurfaceNeutralLevel18)]",
+const { locale } = useI18n();
+useHead(() => ({
+  htmlAttrs: {
+    dir: locale.value === "fa" ? "rtl" : "ltr",
+    lang: locale.value,
   },
-});
+}));
 </script>
 
 <template>
   <StructureHeader />
-
   <main>
     <UContainer>
       <slot />

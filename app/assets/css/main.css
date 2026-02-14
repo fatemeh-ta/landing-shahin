@@ -6,43 +6,172 @@
   --ui-text: #191919;
   --ui-border: #eeeeee;
   --ui-bg: #ffffff;
+
   --ui-secondary: #7c7c7c;
   --white: #fff;
+  --BaseBlack: #ffffff;
   --black: #202020;
+  --ContentBrandLevel1: #ff5c2f;
   --ContentNeutralLevel4: #7c7c7c;
-  --ContentNeutralLevel6: #4d4d4d;
-
+  /* --ContentNeutralLevel5: #666666; */
+  /* --ContentNeutralLevel6: #4d4d4d; */
+  --BoxShadow: #b0aebc26;
+  --BoxShadowLevel1: #ffded599;
   --SurfaceNeutralLevel18: #fafafa;
   --SurfaceNeutralLevel2: #ffffff;
-
+  --SurfaceBrandLevel2: #fff7f4;
+  --Neutral-08: #666666;
+  --Neutral02: #f5f5f5;
+  --Neutral03: #f2f4f7;
   --BorderNeutralLevel1: #eeeeee;
+
+  --Brand01: #fff7f4;
+  --Brand02: #ffded5;
+  --Brand03: #ffcec1;
+  --Brand04: #ffbeac;
+  --Brand05: #ffad97;
+  --Brand06: #ff9d82;
+  --Brand07: #ff8d6d;
+  --Brand08: #ff7d59;
+  --Brand09: #ff6c44;
+  --BrandPrimary: #ff5c2f;
+  --Brand11: #e14f27;
+  --Brand12: #c64724;
+  --Brand13: #ac3f21;
+  --Brand14: #93371d;
+  --Brand15: #7a2f1a;
+  --Brand16: #622716;
+  --Brand17: #4a1f13;
+  --Brand18: #362622;
+  --Brand19: #221712;
+  --NeutralWhite: #ffffff;
+  --NeutralBG_Light: #f6f5f4;
+  --Neutral01: #fafafa;
+  --Neutral02: #f5f5f5;
+  --Neutral03: #eeeeee;
+  --Neutral04: #e0e0e0;
+  --Neutral05: #b8b8b8;
+  --Neutral06: #9a9a9a;
+  --Neutral07: #7c7c7c;
+  --Neutral08: #666666;
+  --Neutral09: #4d4d4d;
+  --Neutral10: #3a3a3a;
+  --Neutral11: #252525;
+  --Neutral12: #202020;
+  --Neutral13: #1f1f1f;
+  --NeutralBlackLight: #161616;
+  --NeutralBlackDark: #0a0b0a;
+  --NeutralBG_Dark: #1b1b1b;
+
+  --BgNeutralLevel1: var(--NeutralWhite);
+  --SurfaceBrandLevel1: var(--BrandPrimary);
+  --SurfaceBrandLevel2: var(--Brand01);
+  --SurfaceBrandLevel3: var(--Brand06);
+  --SurfaceBrandLevel4: var(--Brand03);
+  --SurfaceBrandLevel5: var(--NeutralWhite);
+  --SurfaceNeutralLevel1: var(--NeutralBlackLight);
+  --ContentBrandLevel1: var(--BrandPrimary);
+  --SurfaceNeutralLevel2: var(--NeutralBG_Light);
+  --SurfaceNeutralLevel3: var(--NeutralWhite);
+  --SurfaceNeutralLevel4: var(--NeutralWhite);
+  --SurfaceNeutralLevel5: var(--Neutral11);
+  --SurfaceNeutralLevel6: var(--Neutral13);
+  --SurfaceNeutralLevel7: var(--Neutral03);
+  --SurfaceNeutralLevel8: var(--NeutralWhite);
+  --SurfaceNeutralLevel9: var(--Neutral12);
+  --SurfaceNeutralLevel10: var(--NeutralWhite);
+  --SurfaceNeutralLevel11: var(--NeutralWhite);
+  --SurfaceNeutralLevel12: var(--Neutral12);
+  --SurfaceNeutralLevel13: var(--NeutralWhite);
+  --SurfaceNeutralLevel14: var(--Neutral02);
+  --SurfaceNeutralLevel15: var(--Neutral04);
+  --ContentNeutralLevel1: var(--NeutralBlackLight);
+  --ContentNeutralLevel2: var(--Neutral11);
+  --ContentNeutralLevel3: var(--NeutralWhite);
+  --ContentNeutralLevel4: var(--Neutral12);
+  --ContentNeutralLevel5: var(--Neutral02);
+  --ContentNeutralLevel6: var(--Neutral03);
+  --ContentNeutralLevel7: var(--Neutral07);
+  --ContentNeutralLevel8: var(--Neutral12);
+  --ContentNeutralLevel9: var(--Neutral09);
+  --ContentNeutralLevel10: var(--Neutral10);
+  --BorderBrandLevel1: var(--Brand02);
+  --BorderBrandLevel2: var(--Brand04);
+  --BorderNeutralLevel1: var(--Neutral04);
+  --BorderNeutralLevel2: var(--Neutral10);
 }
 
 .dark {
   --ui-text: #fff;
   --black: #202020;
   --ui-border: #3a3a3a;
-  --ui-bg: #202020;
+  --ui-bg: #000;
   --ui-bg-elevated: #1a191965;
   --ui-border-accented: #3a3a3a;
-
+  --BaseBlack: #0a0b0a;
+  --Neutral02: #3a3a3a;
+  --Neutral03: #1f1f1f;
   --white: #fff;
-
+  --BoxShadowLevel1: #68160099;
   --ContentNeutralLevel4: #7c7c7c;
-  --ContentNeutralLevel6: #eeeeee;
+  --ContentNeutralLevel5: #9a9a9a;
+  /* --ContentNeutralLevel6: #eeeeee; */
 
   --SurfaceNeutralLevel18: #191919;
   --SurfaceNeutralLevel2: #202020;
+  --SurfaceBrandLevel2: #362622;
 
+  --Neutral-08: #666666;
   --BorderNeutralLevel1: #3a3a3a;
+
+  --BGNeutralLevel1: var(--NeutralBlackDark);
+  --SurfaceBrandLevel1: var(--BrandPrimary);
+  --SurfaceBrandLevel2: var(--Brand18);
+  --SurfaceBrandLevel3: var(--Brand06);
+  --SurfaceBrandLevel4: var(--Brand18);
+  --SurfaceBrandLevel5: var(--Brand19);
+  --SurfaceNeutralLevel1: var(--NeutralBlackLight);
+  --ContentBrandLevel1: var(--BrandPrimary);
+  --SurfaceNeutralLevel2: var(--NeutralBgDark);
+  --SurfaceNeutralLevel3: var(--NeutralBlackLight);
+  --SurfaceNeutralLevel4: var(--NeutralBlackDark);
+  --SurfaceNeutralLevel5: var(--Neutral11);
+  --SurfaceNeutralLevel6: var(--Neutral13);
+  --SurfaceNeutralLevel7: var(--Neutral13);
+  --SurfaceNeutralLevel8: var(--Neutral13);
+  --SurfaceNeutralLevel9: var(--NeutralWhite);
+  --SurfaceNeutralLevel10: var(--NeutralWhite);
+  --SurfaceNeutralLevel11: var(--NeutralBgDark);
+  --SurfaceNeutralLevel12: var(--Neutral12);
+  --SurfaceNeutralLevel13: var(--Neutral10);
+  --SurfaceNeutralLevel14: var(--NeutralBgDark);
+  --SurfaceNeutralLevel15: var(--Neutral06);
+  --ContentNeutralLevel1: var(--NeutralWhite);
+  --ContentNeutralLevel2: var(--Neutral02);
+  --ContentNeutralLevel3: var(--NeutralWhite);
+  --ContentNeutralLevel4: var(--Neutral01);
+  --ContentNeutralLevel5: var(--Neutral02);
+  --ContentNeutralLevel6: var(--Neutral11);
+  --ContentNeutralLevel7: var(--Neutral07);
+  --ContentNeutralLevel8: var(--Neutral12);
+  --ContentNeutralLevel9: var(--Neutral06);
+  --ContentNeutralLevel10: var(--Neutral03);
+  --BorderBrandLevel1: var(--Brand18);
+  --BorderBrandLevel2: var(--Brand14);
+  --BorderNeutralLevel1: var(--Neutral10);
+  --BorderNeutralLevel2: var(--Neutral10);
 }
 
 @font-face {
   font-family: "iranSans";
-  src: url("../fonts/IRANSansXV.woff") format("woff");
-  font-weight: 400;
+  src: url("/fonts/IRANSansXV.woff") format("woff");
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
+}
+
+html {
+  font-family: iranSans, system-ui, sans-serif;
 }
 
 @theme {
@@ -50,10 +179,12 @@
 }
 
 @layer utilities {
-  .disabled\:bg-primary {
-    &:disabled {
-      background-color: var(--ContentNeutralLevel4);
-    }
+  .disabled\:bg-primary:disabled {
+    background-color: var(--ContentNeutralLevel4);
+  }
+
+  .text-muted {
+    color: var(--ui-text) !important;
   }
 }
 
@@ -63,7 +194,7 @@
   display: flex !important;
 } */
 
-.vpd-content {
+/* .vpd-content {
   border-radius: 8px !important;
 }
 
@@ -100,4 +231,8 @@
 
 .vpd-time .vpd-up-arrow-btn {
   top: 12px !important;
+} */
+
+.shadow-box-level1 {
+  box-shadow: 0px 0px 16px 0px var(--BoxShadowLevel1);
 }

@@ -1,0 +1,55 @@
+<svg width="1262" height="243" viewBox="0 0 1262 243" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_682_5028)">
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M90.667 246V54.7964H272V246H90.667Z" fill="#A9AEB9"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.45923e-06 246L0 160.814H181.333V246H8.45923e-06Z" fill="#A9AEB9"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M181.333 246V-4L362.667 -4V246H181.333Z" fill="#969CA7"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M272 246V113.824H453.333V246H272Z" fill="#969CA7"/>
+</g>
+</g>
+<g clip-path="url(#clip1_682_5028)">
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M543.667 246V54.7964H725V246H543.667Z" fill="#A9AEB9"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M453 246L453 160.814H634.333V246H453Z" fill="#A9AEB9"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M634.333 246V-4L815.667 -4V246H634.333Z" fill="#969CA7"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M725 246V113.824H906.333V246H725Z" fill="#969CA7"/>
+</g>
+</g>
+<g clip-path="url(#clip2_682_5028)">
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M996.667 246V54.7964H1178V246H996.667Z" fill="#A9AEB9"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M906 246L906 160.814H1087.33V246H906Z" fill="#A9AEB9"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1087.33 246V-4L1268.67 -4V246H1087.33Z" fill="#969CA7"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.05">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1178 246V113.824H1359.33V246H1178Z" fill="#969CA7"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_682_5028">
+<rect width="453.333" height="250" fill="white" transform="translate(0 -4)"/>
+</clipPath>
+<clipPath id="clip1_682_5028">
+<rect width="453.333" height="250" fill="white" transform="translate(453 -4)"/>
+</clipPath>
+<clipPath id="clip2_682_5028">
+<rect width="453.333" height="250" fill="white" transform="translate(906 -4)"/>
+</clipPath>
+</defs>
+</svg>

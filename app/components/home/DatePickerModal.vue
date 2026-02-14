@@ -30,7 +30,7 @@ watch(open, (newVal) => {
     :ui="{
       header: 'justify-between items-start border-none',
       body: 'border-none',
-      description: 'text-[var(-ContentNeutralLevel6)] pt-1',
+      description: 'text-[var(--ContentNeutralLevel9)] pt-1',
       content: 'overflow-visible',
     }"
   >
